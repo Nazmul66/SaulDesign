@@ -1,0 +1,137 @@
+/*=================
+    Google Fonts
+===================*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=================
+    Global Css
+===================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #222831;
+}
+:root{
+  --blue-green: #00ADB5;
+  --white: #FFF;
+  --light-white: #EEE;
+  --text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+  --light-black-bg: rgba(57,62,70,0.75);
+}
+a{
+    text-decoration: none;
+}
+
+/*=========================
+    Header section start
+===========================*/
+header{
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+}
+header .container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .logo{
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--light-white);
+}
+
+.menu ul{
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 14px ;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--light-white);
+}
+.menu ul li a{
+    color: var(--light-white);
+}
+
+/*=========================
+    Banner section start
+===========================*/
+.banner-section{
+    padding: 75px 0;
+}
+.banner-section .container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.banner-details {
+    position: relative;
+    flex:1 1 60%;
+    margin-top: 70px;
+}
+.banner-details .string{
+    position: absolute;
+    top: 12%;
+    left: -14%;
+}
+.banner-details h1{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;   
+    color:var(--light-white);
+    margin-bottom: 48px;
+}
+.banner-details h1 span{
+    display: block;
+    color: var(--blue-green);
+}
+.links{
+    display: flex;
+}
+.links .btn-hire{
+    padding: 10px 32px;
+    background: var(--blue-green);
+    color: var(--light-white);
+    text-shadow: var(--text-shadow);
+    border-radius: 50px; 
+    display: block;
+    width: 126px;
+}
+.links .btn-download{
+    padding: 10px 32px;
+    background: var(--light-black-bg);
+    color: var(--light-white);
+    text-shadow: var(--text-shadow);
+    border-radius: 50px; 
+    display: block;
+    width: 201px;
+    margin-left: 24px;
+ }
+.links .btn-download .bx-download{
+    background: transparent;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.banner-img{
+    flex:1 1 40%;
+} 
+.banner-img .simage{
+    width: 100%;
+}
+.container .down-arrow{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 5%;
+}
