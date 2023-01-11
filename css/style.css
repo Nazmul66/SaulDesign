@@ -11,9 +11,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #222831;
 }
 :root{
+  --bg-same: #222831;
   --blue-green: #00ADB5;
   --white: #FFF;
   --light-white: #EEE;
@@ -28,6 +28,7 @@ a{
     Header section start
 ===========================*/
 header{
+    background-color: var(--bg-same);
     padding: 40px 0;
     border-bottom: 1px solid rgba(238, 238, 238, 0.1);
 }
@@ -65,6 +66,7 @@ header .container{
     Banner section start
 ===========================*/
 .banner-section{
+    background-color: var(--bg-same);
     padding: 75px 0;
 }
 .banner-section .container{
@@ -86,7 +88,7 @@ header .container{
 }
 .banner-details h1{
     font-weight: 700;
-    font-size: 96px;
+    font-size: 80px;
     line-height: 96px;   
     color:var(--light-white);
     margin-bottom: 48px;
@@ -134,4 +136,124 @@ header .container{
     bottom: 0;
     left: 40%;
     width: 5%;
+}
+
+/*=========================
+    About section start
+===========================*/
+.about-section{
+    background-color: var(--bg-same);
+    padding: 100px 0 150px;
+}
+.about-section .container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  
+    gap: 170px;
+    position: relative;  
+}
+.about-title{
+    position: relative;
+    flex: 1 1 40%;
+}
+.about-title .music{
+    position: absolute;
+    top: -24%;
+}
+.about-title .idea{
+    position: absolute;
+    top: 0;
+    right: -8%;
+}
+.about-title .string2{
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+}
+.about-title h1{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 96px;
+    color: var(--light-white);
+}
+.about-title .color-it{
+    color: var(--blue-green);
+}
+.about-title p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(238, 238, 238, 0.75);
+}
+.about-title .btn-read{
+    color: var(--light-white);
+    font-weight: 600;
+}
+.about-img{
+    flex: 1 1 60%;
+}
+.about-img .image-2{
+  width: 100%;
+}
+
+/*=========================
+    Project section start
+===========================*/
+.project-section{
+    padding: 100px 0 150px;
+    background: url(../image/background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.project-section .container{
+    max-width: 1140px;
+    margin: 0 auto;  
+}
+.project-section .container h1{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 96px;
+    color: var(--light-white);   
+}
+.project-section .container .color-it2{
+    color: var(--blue-green);
+}
+.project-section .container ul{
+    padding: 0;
+    margin-bottom: 70px;
+}
+.project-section .container ul li{
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 32px;
+    font-weight: 600;
+    background: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px); 
+    color: var(--light-white);
+    text-shadow: var(--text-shadow);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.project-section .container ul li:hover{
+    background: var(--blue-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.image-selection{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+}
+.image-selection .select-1{
+    width: 100%;
+}
+.image-selection .select-2{
+    width: 100%;
+}
+.image-selection .select-3{
+    width: 100%;
 }
