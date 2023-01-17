@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 :root{
@@ -60,6 +61,16 @@ header .container{
 }
 .menu ul li a{
     color: var(--light-white);
+}
+.fa-xmark{
+    font-size: 22px;
+    color: var(--light-white);
+    display: none;
+}
+.fa-bars {
+    font-size: 22px;
+    color: var(--light-white);
+    display: none;
 }
 
 /*=========================
@@ -394,4 +405,207 @@ header .container{
 }
 .contact-form .bx-navigation{
     margin-left: 12px;
+}
+
+/*====  For mobile responsive device  ====*/  
+
+@media (min-width: 320px) and (max-width: 576px){
+ 
+ /*====  Header section start  ====*/  
+ header {
+    padding: 20px 15px;
+}
+.menu {
+    position: fixed;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(35px);
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    z-index: 99;
+    left: -70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.menu ul li {
+    display: block;
+    margin-bottom: 30px;
+}
+.menu.active{
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.fa-xmark{
+    display: block;
+    position: absolute;
+    font-size: 34px;
+    top: 3%;
+    right: 14%;
+}
+.fa-bars {
+    display: block;
+}
+
+ /*====  Banner section start  ====*/  
+.banner-section {
+    padding: 50px 10px 50px;
+}
+.banner-details .string {
+    display: none;
+}
+.banner-details h1 {
+    font-size: 48px;
+    text-align: center;
+    line-height: 70px;
+    margin-bottom:30px;
+}
+.links {
+    justify-content: center;
+}
+.links .btn-download {
+    margin-left: 14px;
+  }
+.banner-section .container{
+    flex-direction: column;
+}
+.banner-details {
+    flex: 1 1 100%;
+    margin-top: 0px;
+}
+.banner-img .simage {
+    width: 300px;
+    display: block;
+    margin: 50px auto 0;
+}
+.container .down-arrow {
+    bottom: -9%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+}
+ 
+/*====  About section start  ====*/  
+
+.about-section {
+    background-color: var(--bg-same);
+    padding: 100px 10px 100px;
+}
+.about-section .container  {
+    flex-direction: column;
+    gap: 0;
+}
+.about-title {
+    position: relative;
+    flex: 1 1 100%;
+}
+.about-title .music {
+    top: -72px;
+    left: 10px;
+    width: 45px;
+}
+.about-title .idea {
+    top: -13%;
+    right: 0;
+    width: 60px;
+}
+.about-title .string2 {
+    display: none;
+  }
+.about-title h1 {
+    font-size: 45px;
+    text-align: center;
+}
+.about-title p {
+    font-size: 16px;
+    text-align: center;
+  }
+.about-img {
+    flex: 1 1 100%;
+    margin-top: 60px;
+}
+
+/*====  Project section start  ====*/ 
+.project-section {
+    padding: 100px 10px;
+}
+.project-section .container h1 {
+    font-size: 48px;
+    text-align: center;
+    line-height: 58px;
+    margin-bottom: 30px;
+}
+.project-section .container ul {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+.project-section .container ul li {
+    margin-right: 14px;
+    margin-bottom: 14px;
+    padding: 8px 26px;
+    font-size: 14px;
+}
+.image-selection {
+    flex-direction: column;
+    gap: 24px;
+}
+
+/*====  Contact section start  ====*/
+.contact-section {
+    padding: 80px 10px;
+}
+.contact-section .container {
+    gap: 70px;
+    flex-direction: column;
+  }
+.contact-details {
+    width: 100%;
+    position: relative;
+}
+.contact-details h1 {
+    font-size: 45px;
+    text-align: center;
+    line-height: 66px;
+}
+.contact-details .string3 {
+    display: none;
+}
+.contact-details .image-3 {
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+}
+.contact-form {
+    width: 100%;
+}
+.contact-form .keyboard {
+    display: none;
+}
+.name-form {
+    margin-bottom: 22px;
+    flex-direction: column;
+}
+.contact-form .btn-send {
+    margin: 0 auto;
+}
+.contact-form .mail {
+    bottom: 0;
+    right: -3%;
+    width: 14%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -27,3 +27,25 @@ $(document).ready(function(){
   });
 
 });
+
+
+//javascript code writing
+
+var menu = document.querySelector(".menu");
+var icon = document.querySelector(".fa-bars");
+var xMark = document.querySelector(".fa-xmark");
+
+
+icon.addEventListener("click", function(){
+  menu.classList.add("active");
+});
+
+xMark.addEventListener("click", function(){
+  menu.classList.remove("active");
+});
+
+//javascript code writing
+window.addEventListener("scroll",function(){
+  menu.classList.remove("active");
+});
+ 

@@ -14,24 +14,29 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+    <!--  font awesome linkup file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
     <!--  CSS linkup file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
     <!--  Header section start  -->
-      <header>
+      <header id="home">
         <div class="container">
             <a href="">
                 <span class="logo">SaulDesign</span>
             </a>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
                 </ul>
             </div>
+            <div class="fa-solid fa-bars"></div>
         </div>
       </header>
     <!--  Header section end  -->
@@ -58,7 +63,7 @@
     <!--  Banner section end  -->
 
     <!--  About section start  -->
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="container">
           <div class="about-title">
             <img src="image/music.png" alt="" class="music">
@@ -100,7 +105,7 @@
     <!--  Project section end  -->
 
     <!--  Contact section start  -->
-       <section class="contact-section">
+       <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-details">
                 <h1>Got a project in <span class="color-it3">mind?</span></h1>
@@ -118,7 +123,7 @@
                         </div>
                         <div class="email-section">
                             <label for="email">Your email</label>
-                            <input type="email" name="email" placeholder="email" required="required" autocomplete="off">
+                            <input type="email" name="email" placeholder="Email" required="required" autocomplete="off">
                         </div>
                     </div>
                     <div class="messege-section">
@@ -131,8 +136,6 @@
         </div>
        </section>
     <!--  contact section end  -->
-
-
 
     <!--  Jquery Original CDN linkup file  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
