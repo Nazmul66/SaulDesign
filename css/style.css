@@ -407,6 +407,66 @@ header .container{
     margin-left: 12px;
 }
 
+/*=========================
+    Footer section start
+===========================*/
+footer {
+    padding: 100px 0 30px;
+    background-color: var(--bg-same);
+    border-top: 1px solid rgba(238, 238, 238, 0.1);
+}
+footer .container{
+    max-width: 1140px;
+    margin: 0 auto;  
+}
+.footer-details{
+    text-align: center;
+    margin-bottom: 38px;
+}
+.footer-details ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+.footer-details ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--light-white);
+}
+.footer-details ul li .fa-solid{
+    margin-right: 10px;
+}
+
+.social-media{
+    text-align: center;
+    margin-bottom: 90px;
+}
+.social-media ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 7px;
+}
+.social-media ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    color :rgba(238, 238, 238, 0.75)
+}
+.social-media ul li .fa-brands{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background: #393E46;
+    border-radius: 50px;
+}
+footer .container p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(238, 238, 238, 0.75);
+    text-align: right;
+}
+
 /*====  For mobile responsive device  ====*/  
 
 @media (min-width: 320px) and (max-width: 576px){
@@ -596,6 +656,32 @@ header .container{
     width: 14%;
 }
 
+ /*====  Footer section start  ====*/  
+ footer {
+    padding: 50px 0 30px;
+}
+.footer-details {
+    margin-bottom: 26px;
+}
+.footer-details ul li {
+    margin: 10px 18px;
+}
+.footer-details ul li .fa-solid {
+    margin-right: 7px;
+}
+.social-media ul li .fa-brands {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+}
+.social-media {
+    margin-bottom: 50px;
+}
+footer .container p {
+    font-size: 14px;
+    text-align: center;
+}
 
 
 
